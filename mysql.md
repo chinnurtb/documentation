@@ -27,6 +27,13 @@ Useful when saving dump diffs in version control
 SHOW CREATE TABLE tbl_name;
 ```
 
+# Insert from other table
+
+```sql
+INSERT INTO transaction (amount, project) SELECT amount, project FROM credit;
+```
+
+
 
 Truncate all tables
 -------------------
