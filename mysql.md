@@ -42,3 +42,13 @@ Shows all tables without boilerplate
     awk '{print "TRUNCATE "$0";"}
 
 Transforms the table into a truncate
+
+# mysql client
+
+## show all tables
+
+    show tables;
+
+    describe $table;
+
+    show CREATE TABLE $table
