@@ -53,3 +53,13 @@ convert images
 --------------
 
 convert foo.input bar.output
+
+# Nameserver
+
+    dig ns domain
+
+returns the nameserver of the domain
+
+    dig @$ns domain
+
+returns the entries of this domain from $ns
