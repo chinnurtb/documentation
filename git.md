@@ -1,6 +1,10 @@
 General
 =======
 
+Push local branch to another remove branch
+
+    git push origin local_branch:remote_branch
+
 ### Undo last commit
 
     git reset HEAD^
@@ -72,3 +76,20 @@ History
 ### checkout specific file only
 
     git checkout hash file/to/restore
+
+
+# Delete merged branches
+
+http://devblog.springest.com/a-script-to-remove-old-git-branches
+
+locally
+
+```
+git branch --merged master | grep -v 'master$' | xargs git branch -d
+```
+
+remote
+
+```
+git branch -r --merged master | sed 's/ *origin\///' | grep -v 'master$' | xargs -I% git push origin :%
+```
