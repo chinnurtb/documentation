@@ -109,3 +109,14 @@ goto previous tab
 
 `&` is the matched pattern
 [Source: stackoverflow](http://stackoverflow.com/questions/5217058/vim-reformat-a-python-file-to-have-4-space-indentations)
+
+
+# Variables and Stuff I neeeded to learn while understanding unite.vim
+
+:let and :set are different
+:set is for setting options, :let for assigning a value to a variable.
+http://stackoverflow.com/questions/9990219/vim-whats-the-difference-between-let-and-set
+
+
+Get the value of an option :set option?
+Get the value of an variable :echo variable
