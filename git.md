@@ -27,6 +27,12 @@ Push local branch to another remove branch
 ### Restore deleted file
 
     git checkout <deleting-commit>^ -- <file-path>
+    
+### Find unreachable commits with commit message
+
+    git fsck --full --no-reflogs --unreachable --lost-found | awk '{print $3}' | xargs -n 1 git log -n 1 --pretty=oneline
+    
+Source [Recover deleted branch from git](https://stackoverflow.com/questions/16793637/recover-deleted-branch-git)
 
 
 Submodules
