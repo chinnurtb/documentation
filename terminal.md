@@ -42,6 +42,10 @@ bash scripting
     bar=${bar:1}
 
     echo $bar
+    
+## bash script folder name base dir
+
+    BASE_DIR="$(cd "$(dirname $BASH_SOURCE)" && pwd)"
 
 extract image from pdf
 ----------------------
